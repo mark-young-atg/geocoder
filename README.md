@@ -762,6 +762,18 @@ This uses the PostcodeAnywhere UK Geocode service, this will geocode any string 
 - **Limitations**: Only good for non-commercial use. For commercial usage please check http://lbs.amap.com/home/terms/
 - **Notes**: To use AMap set `Geocoder.configure(:lookup => :amap, :api_key => "your_api_key")`.
 
+#### GetAddressUk (`:get_address__uk`)
+
+* **API key**: required
+* **Quota**: 20/day for free through 5,000/day for £20/mo
+* **Region**: UK
+* **SSL support**: yes
+* **Languages**: English
+* **Documentation**: https://getaddress.io/Documentation
+* **Terms of Service**: https://getaddress.io/#faq
+* **Limitations**: No restrictions on use
+* **Notes**: To use GetAddress you must include an API key: `Geocoder.configure(:lookup => :get_address_uk, :api_key => 'your_api_key')`.
+
 ### IP Address Services
 
 #### IPInfo.io (`:ipinfo_io`)
